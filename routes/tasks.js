@@ -4,7 +4,9 @@ const {
   getTask,
   createTask,
   updateTask,
-  deleteTask
+  deleteTask,
+  assignTask,
+  updateTaskStatus
 } = require('../controllers/taskController');
 
 const router = express.Router();
@@ -19,5 +21,8 @@ router.route('/:id')
   .get(protect, getTask)
   .put(protect, updateTask)
   .delete(protect, deleteTask);
+
+router.put('/:id/assign', protect, authorize('admin', 'manager'), assignTask);
+router.put('/:id/status', protect, updateTaskStatus);
 
 module.exports = router;
