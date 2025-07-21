@@ -172,11 +172,6 @@ EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
 ```
 
-## Screenshots
 
-![Authentication](Screenshots/Screenshot_Auth.png)
-![Task Management](Screenshots/Screenshot_Tasks.png)
-![Expense Tracking](Screenshots/Screenshot_Expenses.png)
-![Notifications](Screenshots/Screenshot_Notifications.png)
 
 
